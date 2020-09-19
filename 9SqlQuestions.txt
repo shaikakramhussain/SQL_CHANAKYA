@@ -1,0 +1,21 @@
+1)Return all the 
+products Name, 
+Unit price, 
+New Price (Unit price *1.5).
+
+	2)Get the orders placed this year.
+	3)From the order items table get the item order #6, where the 
+	total price is greater than 30.
+
+	4)Return products with quantity in stock equal to 49,38,72.
+	5)Return customers born between 01/01/1990 and 01/01/2000
+	6)Get the customers whose phone Number ending with 9.
+	7)Get the customers whose last name End with EP or HI.
+	8)Get the customers whose last names start with MA or contain NI.
+	9)Get the customers where last names contain R followed by I or M.
+
+
+------------------------------------------------------------------------------
+
+CREATE TABLE Products(ProdNo INT(3) PRIMARY KEY, ProdName VARCHAR(35) NOT NULL, ProdCode INT(3), UnitPrice FLOAT(11,2), NewPrice FLOAT(11,2));
+

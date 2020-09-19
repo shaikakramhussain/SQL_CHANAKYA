@@ -1,0 +1,60 @@
+Functions:-
+---------
+Two Types:-
+---------
+1)Aggregate Function.->Function Returns single value.(INTEGER)
+2)Scalar Function.->Will not return a single value.
+BUILT IN FUNCTIONS.
+-----------------------------------------------
+Aggregate Function:-
+------------------
+Returns average value afer calculating it from values in a numeric column.
+SELECT AVG (column_name) FROM Table_NAME;
+-----------------------------------------------
+First()-> Returns First value of a selcted column.
+SELECT First(column_name) FROM table_name;
+-----------------------------------------------
+SELECT LAST()
+SELECT MAX()
+SELECT MIN()
+-------------------------------------------------
+SELECT SUM(SALARY) FROM EMPLOYEE;
+-----------------------------------------------
+
+	SCALAR FUNCTION
+-----------------------------------------------
+IT Will not return a single value.
+SELECT UCASE()
+SELECT LCASE()
+SELECT MID()-> to extract substrings from column values of string type in a table;
+SELECT MID(column_name,start,length) from table_name;
+SELECT MID(name,2,2) FROM emp;
+--------------------------------------------------------------------------
+Round():-
+-------
+USed to round a numeric field to number of nearest integer.It is used on decimal point values.
+-----------------------------------------------------------------------------------------------
+
+SELECT ROUND(SALARY) FROM EMPLOYEE;
+SELECT ROUND(column_NAME,decimal) from Table_Name;
+------------------------------------------------------------------------------------------------
+
+
+
+				JOINS
+-------------------------------------------------------------------------------------------------
+To retrieve data from one or more tables;
+Display the list of employees and their department numbers;
+SELECT ename,deptno from emp;
+--------------------------------------------------------------------------
+To display list of employees and their department names, date has to come from two tables employee and department.
+SELECT ENAME,DNAME 
+FROM EMP
+JOIN DEPARTMENT
+ON
+emp.deptno = dept.deptno;
+-------------------------------------------------------------------------
+SELECT<List_OF_COlumns> FROM <LIST_OF_TABLES> WHERE <CONDITION>.
+SELECT<COLUMN_DETAILS> FROM TABLE1 JOIN TABLE2 ON CONDITION.
+
+
